@@ -66,3 +66,4 @@ vercel --prod   # production deploy
 **Option C, Git:** push this folder to a GitHub repo, then "Import Project" on Vercel. It auto-deploys on every push.
 
 No framework or build settings needed. Vercel serves these static files as-is.
+# project-sana
