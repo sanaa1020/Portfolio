@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sana, student at VIT Vellore. Portfolio, achievements in sports and academics, and projects." />
+  <meta name="theme-color" content="#7a1f1f" />
+  <title>Sana, Portfolio</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sana, Portfolio" />
+  <meta property="og:description" content="Student at VIT Vellore. Achievements in sports and academics." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: editorial pairing, Fraunces (display serif) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Mouse trail layer -->
+  <canvas id="trail" aria-hidden="true"></canvas>
+
+  <!-- Sticky top nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">Sana</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#app">App</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <!-- Clickable decorative cherries, confined to the hero at varied sizes -->
+      <img class="cherry cherry--1" src="assets/cherry.png" alt="" aria-hidden="true" onerror="this.style.display='none'" />
+      <img class="cherry cherry--2" src="assets/cherry.png" alt="" aria-hidden="true" onerror="this.style.display='none'" />
+      <img class="cherry cherry--3" src="assets/cherry.png" alt="" aria-hidden="true" onerror="this.style.display='none'" />
+      <img class="cherry cherry--4" src="assets/cherry.png" alt="" aria-hidden="true" onerror="this.style.display='none'" />
+      <img class="cherry cherry--5" src="assets/cherry.png" alt="" aria-hidden="true" onerror="this.style.display='none'" />
+
+      <div class="container reveal">
+        <p class="hero__eyebrow">VIT Vellore · Student</p>
+        <h1 class="hero__title">
+          Hi, I'm <span class="accent">Sana</span>.
+        </h1>
+        <p class="hero__lead">
+          A student at VIT Vellore with a passion for technology and sports,
+          turning ideas into things people can actually use.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#achievements">See achievements</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">☆</span>
+          <h2 class="section__title">About</h2>
+        </div>
+        <div class="about reveal">
+          <div class="about__photo">
+            <span class="about__photo-inner" aria-hidden="true">S</span>
+            <img src="assets/sana.jpg" alt="Sana" onerror="this.style.display='none'" />
+          </div>
+          <div class="about__text">
+            <p>
+              I'm Sana, currently studying at
+              <strong>VIT Vellore</strong>. I like working at the intersection
+              of ideas and execution, whether that's writing code, building
+              apps, or competing on the field.
+            </p>
+            <p>
+              Outside the classroom you'll find me chasing goals in sports and
+              pushing to do a little better than yesterday. This page is a small
+              window into the things I've built and the milestones I'm proud of.
+            </p>
+            <ul class="about__tags">
+              <li>App Development</li>
+              <li>Problem Solving</li>
+              <li>Sports</li>
+              <li>Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section section--alt" id="achievements">
+      <!-- Clickable decorative cherries for this section -->
+      <img class="cherry cherry--a2" src="assets/cherry.png" alt="" aria-hidden="true" onerror="this.style.display='none'" />
+      <img class="cherry cherry--a3" src="assets/cherry.png" alt="" aria-hidden="true" onerror="this.style.display='none'" />
+
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">☆</span>
+          <h2 class="section__title">Achievements</h2>
+        </div>
+
+        <div class="ach-grid">
+          <!-- Sports -->
+          <div class="ach-col reveal">
+            <h3 class="ach-col__title">
+              <span class="ach-col__kicker">On the field</span>
+              Sports
+            </h3>
+            <ul class="ach-list">
+              <li class="ach-item">
+                <span class="ach-item__year">2026</span>
+                <div>
+                  <p class="ach-item__head">CM Trophy, District Level Football</p>
+                  <p class="ach-item__sub">First place.</p>
+                </div>
+              </li>
+              <li class="ach-item">
+                <span class="ach-item__year">2024</span>
+                <div>
+                  <p class="ach-item__head">Reliance, State Level</p>
+                  <p class="ach-item__sub">Second place.</p>
+                </div>
+              </li>
+              <li class="ach-item">
+                <span class="ach-item__year">School</span>
+                <div>
+                  <p class="ach-item__head">Multiple school level trophies</p>
+                  <p class="ach-item__sub">Across various tournaments and seasons.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Academics -->
+          <div class="ach-col reveal">
+            <h3 class="ach-col__title">
+              <span class="ach-col__kicker">In the classroom</span>
+              Academics
+            </h3>
+            <ul class="ach-list">
+              <li class="ach-item">
+                <span class="ach-item__year">2026</span>
+                <div>
+                  <p class="ach-item__head">JEE 2026</p>
+                  <p class="ach-item__sub">95.15 percentile.</p>
+                </div>
+              </li>
+              <li class="ach-item">
+                <span class="ach-item__year">2026</span>
+                <div>
+                  <p class="ach-item__head">KEAM 2026</p>
+                  <p class="ach-item__sub">Rank 801.</p>
+                </div>
+              </li>
+              <li class="ach-item">
+                <span class="ach-item__year">Class 12</span>
+                <div>
+                  <p class="ach-item__head">CBSE Board Exam</p>
+                  <p class="ach-item__sub">95%.</p>
+                </div>
+              </li>
+              <li class="ach-item">
+                <span class="ach-item__year">Class 10</span>
+                <div>
+                  <p class="ach-item__head">ICSE Board Exam</p>
+                  <p class="ach-item__sub">94.6%.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image carousel, in its own column to the right of Academics -->
+          <div class="carousel reveal" id="carousel" aria-roledescription="carousel" aria-label="Achievement highlights">
+            <div class="carousel__viewport">
+              <div class="carousel__track" id="carouselTrack">
+                <div class="carousel__slide">
+                  <img src="assets/img1.jpg" alt="Achievement highlight 1" loading="lazy" onerror="this.closest('.carousel__slide').classList.add('carousel__slide--missing')" />
+                </div>
+                <div class="carousel__slide">
+                  <img src="assets/img2.jpg" alt="Achievement highlight 2" loading="lazy" onerror="this.closest('.carousel__slide').classList.add('carousel__slide--missing')" />
+                </div>
+                <div class="carousel__slide">
+                  <img src="assets/img3.jpg" alt="Achievement highlight 3" loading="lazy" onerror="this.closest('.carousel__slide').classList.add('carousel__slide--missing')" />
+                </div>
+                <div class="carousel__slide">
+                  <img src="assets/img4.jpg" alt="Achievement highlight 4" loading="lazy" onerror="this.closest('.carousel__slide').classList.add('carousel__slide--missing')" />
+                </div>
+                <div class="carousel__slide">
+                  <img src="assets/img5.jpg" alt="Achievement highlight 5" loading="lazy" onerror="this.closest('.carousel__slide').classList.add('carousel__slide--missing')" />
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel__btn carousel__btn--prev" id="carouselPrev" type="button" aria-label="Previous image">‹</button>
+            <button class="carousel__btn carousel__btn--next" id="carouselNext" type="button" aria-label="Next image">›</button>
+
+            <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Choose image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App -->
+    <section class="section" id="app">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">☆</span>
+          <h2 class="section__title">My App</h2>
+        </div>
+        <div class="app-card reveal">
+          <div class="app-card__text">
+            <h3 class="app-card__title">CapCare+</h3>
+            <p>
+              A healthcare mobile app built around two main features:
+            </p>
+            <ul class="app-card__features">
+              <li><strong>Symptom tracker:</strong> log and monitor symptoms over time.</li>
+              <li><strong>Allergen detector:</strong>  scan any packaged food item to check for allergens</li>
+            </ul>
+            <div class="app-card__cta">
+              <a class="btn btn--solid" href="#" id="appLink" target="_blank" rel="noopener">
+                View the app
+              </a>
+            </div>
+          </div>
+          <div class="app-card__mock" aria-hidden="true">
+            <div class="phone">
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <span>CapCare+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact reveal">
+        <div class="section__head">
+          <span class="section__num">☆</span>
+          <h2 class="section__title">Get in touch</h2>
+        </div>
+        <p class="contact__lead">
+          Want to collaborate, chat, or just say hi? 
+        </p>
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:sanafathima.s2026@vitstudent.ac.in">Email</a>
+          <a class="contact__link" href="https://www.linkedin.com/in/sana-fathima-4279b5412" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="contact__link" href="https://github.com/sanaa1020" target="_blank" rel="noopener">GitHub</a>
+          <a class="contact__link" href="https://www.instagram.com/s4na.a_/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Sana · VIT Vellore</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
