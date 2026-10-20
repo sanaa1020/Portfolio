@@ -895,4 +895,13 @@ ul {
   }
 }
 
+.app-card__hint a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
 
+.app-card__hint a:hover {
+  color: var(--accent-bright);
+}
